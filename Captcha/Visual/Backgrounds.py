@@ -9,7 +9,7 @@ Background layers for visual CAPTCHAs
 
 from Captcha.Visual import Layer, Pictures
 import random, os
-from PIL import ImageDraw, Image
+from PILImports import ImageDraw, Image
 
 
 class SolidColor(Layer):
@@ -81,7 +81,7 @@ class RandomDots(Layer):
         self.colors = colors
         self.dotSize = dotSize
         self.numDots = numDots
-	self.seed = random.random()
+        self.seed = random.random()
 
     def render(self, image):
         r = random.Random(self.seed)

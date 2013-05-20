@@ -9,7 +9,7 @@ to manipulate these images.
 #
 
 import Captcha
-from PIL import Image
+from PILImports import Image
 
 __all__ = ['ImageCaptcha', 'Layer']
 
